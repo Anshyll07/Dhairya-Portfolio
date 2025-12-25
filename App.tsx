@@ -50,13 +50,10 @@ const App: React.FC = () => {
     <div className="relative w-full min-h-screen text-white">
       {showBrowserWarning && <BrowserWarning onClose={handleCloseBrowserWarning} />}
 
-      {/* The Persistent Fluid Background */}
       <LiquidBackground />
-      
-      {/* Mouse Tracer for Desktop */}
+
       {isDesktop && <MouseTracer />}
 
-      {/* Content Wrapper */}
       <div className="relative z-10">
         <Navbar />
         <main>

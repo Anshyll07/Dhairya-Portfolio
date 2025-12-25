@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Skill } from '../types';
 
-// SVG Icons for specific tech stack
+
 const Icons = {
   HTML: <path d="M12 2l9.5 2.5-2.5 14L12 22 5 18.5 2.5 4.5 12 2z M12 19l4-1.5 1.5-9h-11l.5 4h7" fill="currentColor" />,
   CSS: <path d="M12 2l9.5 2.5-2.5 14L12 22 5 18.5 2.5 4.5 12 2z" fill="currentColor" opacity="0.8" />,
@@ -16,7 +16,7 @@ const Icons = {
   Keras: <path d="M12 2L2 7v10l10 5 10-5V7L12 2zm0 2.5l7 3.5-7 3.5-7-3.5 7-3.5zm-1 14.5l-6-3v-6l6 3v6zm2 0v-6l6-3v6l-6 3z" fill="currentColor" />,
   Docker: <path d="M4 10h2v2H4zm3 0h2v2H7zm3 0h2v2h-2zm3 0h2v2h-2zm-9-3h2v2H4zm3 0h2v2H7zm3 0h2v2h-2zm-3-3h2v2H7zm-5 9c0 3 4 4 8 4s10-2 10-5" fill="currentColor" />,
   OpenCV: <path d="M12 4a8 8 0 1 0 0 16 8 8 0 0 0 0-16zm0 14a6 6 0 1 1 0-12 6 6 0 0 1 0 12z M12 2v4 M12 18v4 M2 12h4 M18 12h4" fill="currentColor" />,
-  YOLO: <circle cx="12" cy="12" r="8" stroke="currentColor" strokeWidth="2" fill="none" />, // Simplified target
+  YOLO: <circle cx="12" cy="12" r="8" stroke="currentColor" strokeWidth="2" fill="none" />,
 };
 
 const skills: Skill[] = [
@@ -41,12 +41,12 @@ const TechArsenal: React.FC = () => {
     <section className="py-20 px-6 relative">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-           <h2 className="text-primary font-medium tracking-widest uppercase text-sm mb-4">
-             My Stack
-           </h2>
-           <h3 className="text-4xl md:text-5xl font-bold text-white">
-             Technical <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-violet-500">Arsenal</span>
-           </h3>
+          <h2 className="text-primary font-medium tracking-widest uppercase text-sm mb-4">
+            My Stack
+          </h2>
+          <h3 className="text-4xl md:text-5xl font-bold text-white">
+            Technical <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-violet-500">Arsenal</span>
+          </h3>
         </div>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-6">
@@ -60,12 +60,12 @@ const TechArsenal: React.FC = () => {
               whileHover={{ y: -5, backgroundColor: "rgba(255,255,255,0.1)" }}
               className="flex flex-col items-center justify-center p-6 bg-white/5 border border-white/10 rounded-2xl hover:border-white/30 transition-all group cursor-default backdrop-blur-sm"
             >
-              <div 
+              <div
                 className="w-12 h-12 mb-4 transition-transform duration-300 group-hover:scale-110"
-                style={{ color: skill.color }} // Falls back to current color if not overridden by fill
+                style={{ color: skill.color }}
               >
                 <svg viewBox="0 0 24 24" className="w-full h-full fill-current">
-                   {skill.icon}
+                  {skill.icon}
                 </svg>
               </div>
               <span className="text-sm font-bold text-white group-hover:text-white">

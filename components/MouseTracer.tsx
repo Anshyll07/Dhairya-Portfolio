@@ -4,12 +4,12 @@ import { motion, useSpring } from 'framer-motion';
 const MouseTracer: React.FC = () => {
   const [isHovering, setIsHovering] = useState(false);
   const springConfig = { damping: 30, stiffness: 200 };
-  
+
   const mouse = {
     x: useSpring(0, springConfig),
     y: useSpring(0, springConfig),
   };
-  
+
   const scale = useSpring(1, springConfig);
 
   useEffect(() => {
@@ -22,8 +22,8 @@ const MouseTracer: React.FC = () => {
     const handleMouseLeave = () => setIsHovering(false);
 
     window.addEventListener('mousemove', handleMouseMove);
-    
-    // Add hover listeners to all interactive elements
+
+
     document.querySelectorAll('a, button, [role="button"]').forEach((el) => {
       el.addEventListener('mouseenter', handleMouseEnter);
       el.addEventListener('mouseleave', handleMouseLeave);

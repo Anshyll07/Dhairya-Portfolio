@@ -23,17 +23,14 @@ const Navbar: React.FC = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-background/90 border-b border-white/5 py-4' : 'bg-transparent py-6'
-      }`}
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-background/90 border-b border-white/5 py-4' : 'bg-transparent py-6'
+        }`}
     >
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
-        {/* Logo */}
         <a href="#" className="text-2xl font-black tracking-tighter text-white relative z-50">
           DHAIRYA<span className="text-primary">.</span>
         </a>
 
-        {/* Desktop Nav */}
         <div className="hidden md:flex space-x-8">
           {navLinks.map((link) => (
             <a
@@ -49,7 +46,6 @@ const Navbar: React.FC = () => {
           ))}
         </div>
 
-        {/* Mobile Toggle */}
         <button
           className="md:hidden text-white z-50"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -57,7 +53,6 @@ const Navbar: React.FC = () => {
           {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
 
-        {/* Mobile Menu Overlay */}
         {isMobileMenuOpen && (
           <div className="fixed inset-0 bg-background/95 backdrop-blur-xl z-40 flex flex-col items-center justify-center space-y-8 md:hidden">
             {navLinks.map((link) => (

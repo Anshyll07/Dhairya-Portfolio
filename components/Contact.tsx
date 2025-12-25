@@ -22,9 +22,9 @@ const Contact: React.FC = () => {
     e.preventDefault();
     setLoading(true);
 
-    const serviceID = 'service_knsj0xj'; // TODO: Replace with your Service ID
-    const templateID = 'template_zmwssyh'; // TODO: Replace with your Template ID
-    const userID = 'Ydyl-b4hJeVlrRBqf'; // TODO: Replace with your User ID (Public Key)
+    const serviceID = 'service_knsj0xj';
+    const templateID = 'template_zmwssyh';
+    const userID = 'Ydyl-b4hJeVlrRBqf';
 
     const fullMessage = `Email sent by: ${formData.from_email}\n${formData.phone_number ? `Phone: ${formData.phone_number}\n` : ''}\n${formData.message}`;
 
@@ -86,7 +86,7 @@ const Contact: React.FC = () => {
             />
           </div>
           <input
-            type="tel" // Use type="tel" for phone numbers
+            type="tel"
             name="phone_number"
             placeholder="Your Phone Number (Optional)"
             value={formData.phone_number}
@@ -112,13 +112,13 @@ const Contact: React.FC = () => {
             </button>
           </div>
         </motion.form>
-        
+
         {formStatus && (
           <p className="text-center mt-4 text-sm font-medium">
             {formStatus}
           </p>
         )}
-        
+
         <footer className="mt-24 text-center text-slate-600 text-sm">
           © 2025 Dhairya. Built with React, Tailwind & Fluid Motion.
         </footer>

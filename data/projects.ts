@@ -15,7 +15,7 @@ export const projects: Project[] = [
     description: "A web app that makes task management simple and organised. It includes an easy-to-use to-do list, smart reminders, and a clean interface to help you stay productive. This project even won a prize in an international online hackathon for its design and usefulness.",
     tags: ["HTML5", "CSS", "JavaScript", "React"],
     githubLink: "https://github.com/Anshyll07/TaskFlow",
-    demoLink: "https://taskflow-categorie.netlify.app/" 
+    demoLink: "https://taskflow-categorie.netlify.app/"
   },
   {
     id: 3,
@@ -23,7 +23,7 @@ export const projects: Project[] = [
     description: "An AI-powered smart traffic control system designed to efficiently manage and reduce traffic congestion.",
     tags: ["Python", "OpenCV", "Machine Learning", "TensorFlow", "Yolov8"],
     githubLink: "https://github.com/Anshyll07/Smart-Traffic-Light-System",
-    demoLink: "" // the demo button will not be visible
+    demoLink: ""
   },
   {
     id: 4,
@@ -31,6 +31,6 @@ export const projects: Project[] = [
     description: "A platform designed to connect artisans with customers, showcasing unique handcrafted products and supporting traditional craftsmanship with full backend and frontend development with database setup.",
     tags: ["Flask", "Jinja Template", "JavaScript", "HTML5", "CSS", "API Integration", "MySQL"],
     githubLink: "https://github.com/Anshyll07/takneev5",
-    demoLink: "" 
+    demoLink: ""
   }
 ];
